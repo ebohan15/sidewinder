@@ -1,0 +1,197 @@
+/*
+    All variables are stored here
+    Partials linked below
+*/
+body {
+  margin: 0;
+  padding: 0; }
+
+.pageTitle {
+  margin-left: 1%; }
+  .pageTitle h1 {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 35pt;
+    color: #1B4965; }
+  .pageTitle p {
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 15pt;
+    color: #1B4965;
+    margin-left: 10%;
+    width: 80%; }
+
+.cardGrid {
+  margin: 6em 0 0 6em; }
+  .cardGrid .cardGrid-row {
+    display: inline-flex; }
+    .cardGrid .cardGrid-row .cardGrid-colum {
+      margin: 2%; }
+
+.card-wrapper {
+  height: 570px;
+  width: 330px;
+  box-shadow: 0 15px 7px 0 rgba(0, 0, 0, 0.5); }
+  .card-wrapper a {
+    text-decoration: none;
+    color: #1B4965; }
+  .card-wrapper h1 {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    color: #1B4965; }
+  .card-wrapper .card {
+    background-color: #fFfFfF;
+    width: 100%;
+    height: 100%;
+    transition: box-shadow 1s; }
+    .card-wrapper .card p {
+      margin-top: 2%;
+      text-align: center;
+      color: #1B4965;
+      font-family: "Nunito", sans-serif; }
+    .card-wrapper .card .btn-wrapper {
+      text-align: center;
+      color: #1B4965;
+      font-family: "Nunito", sans-serif;
+      font-size: 15pt; }
+    .card-wrapper .card .cardBlerb {
+      text-align: center;
+      font-family: "Nunito", sans-serif;
+      max-width: 20%;
+      text-decoration: none; }
+    .card-wrapper .card .card-image {
+      overflow: hidden;
+      height: 60%; }
+      .card-wrapper .card .card-image img {
+        width: 100%; }
+    .card-wrapper .card .card-slant {
+      overflow: hidden;
+      margin-top: -35px;
+      transform: skewY(5deg);
+      background-color: #fFfFfF;
+      width: 100%;
+      height: 3.5em; }
+    .card-wrapper .card .card-name {
+      position: absolute;
+      z-index: 2;
+      margin: -93px 0 0 1%;
+      font-size: 10pt;
+      font-family: "Oswald", sans-serif;
+      color: #1B4965; }
+    .card-wrapper .card .card-title {
+      position: absolute;
+      z-index: 2;
+      margin: -57px 0 0 1%;
+      font-size: 8pt;
+      font-family: "Oswald", sans-serif;
+      color: #1B4965; }
+    .card-wrapper .card .card-socail {
+      position: absolute;
+      z-index: 3;
+      padding: 0;
+      margin: -5px 0 0 1%;
+      width: 7em; }
+      .card-wrapper .card .card-socail i {
+        margin: 2%; }
+
+#main-header-title {
+  margin-top: -2%;
+  text-align: center;
+  font-size: 2em;
+  font-family: "Oswald", sans-serif;
+  font-size: 2em; }
+
+footer {
+  margin-top: 200px;
+  background-image: url(../img/footer-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 79em;
+  height: 17em; }
+
+.footer-container {
+  position: relative; }
+  .footer-container .footer-text {
+    width: 25%;
+    position: absolute;
+    top: 114%;
+    padding: 0 5%;
+    text-align: left;
+    z-index: 1;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    color: #FFFFFF; }
+  .footer-container .footer {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    background-color: #1B4965;
+    transform: skewY(-5deg);
+    position: absolute;
+    top: 100%;
+    z-index: inherit; }
+  .footer-container .footer2 {
+    width: 79em;
+    height: 20em;
+    overflow: hidden;
+    background-color: #1B4965;
+    position: absolute;
+    top: 18%;
+    z-index: inherit; }
+
+#pText {
+  display: none; }
+
+.header {
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+  margin: 0 0 4vw;
+  padding: 6vw 6vw 20vw;
+  background-image: url(https://thumbs.gfycat.com/SpiritedIdenticalDeer-max-1mb.gif);
+  background-position: center;
+  background-size: 80%; }
+  .header::before, .header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 140%;
+    height: 100%;
+    background: #fff;
+    transform-origin: top left; }
+  .header::before {
+    transform: translate3d(0, 60%, 0) rotate(6deg);
+    opacity: 0; }
+  .header::after {
+    transform: translate3d(0, 100%, 0) rotate(-6deg); }
+
+.content {
+  font-size: 2vw;
+  margin: 0 0 4vw;
+  padding: 6em; }
+
+.Mnavbar {
+  position: fixed;
+  width: 100%; }
+  .Mnavbar a {
+    text-decoration: none;
+    transform: skewY(-10deg); }
+  .Mnavbar li {
+    list-style-type: none;
+    display: inline;
+    margin: 0 0 0 2%;
+    font-size: 16pt;
+    font-family: 'Oswald', sans-serif;
+    padding: 1em;
+    color: white;
+    transition: font-size .5s, color .5s,    padding .15s; }
+    .Mnavbar li:hover {
+      color: pink;
+      font-size: 24pt; }
+
+.test {
+  background-color: #1B4965; }
+  .test li {
+    color: white;
+    background-color: rgba(0, 0, 5, 0); }
